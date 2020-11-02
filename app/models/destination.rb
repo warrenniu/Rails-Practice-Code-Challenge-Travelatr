@@ -14,8 +14,16 @@ class Destination < ApplicationRecord
         self.posts.map do |post|
              post.likes
         end
-    
     end
 
+    def blogger_age
+        self.bloggers.map do |blogger|
+            blogger.age
+        end
+    end
+
+    def blogger_average_age
+        blogger_age.sum / blogger_age.size
+    end
 
 end

@@ -1,0 +1,7 @@
+<h2><%= @blogger.name %></h2>
+<ul>
+<h3>Featured Post</h3>
+<li><%= @blogger.most_likes.max %></li>
+<h3>Total Likes</h3>
+<li><%= @blogger.most_likes.sum %></li>
+</ul>
