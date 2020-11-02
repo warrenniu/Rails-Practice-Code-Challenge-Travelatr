@@ -1,0 +1,9 @@
+<h2> <%= @destination.name%></h2>
+
+<h3>Last 5 Posts</h3>
+<ul>
+<li><%= @destination.last_five_posts %></li>
+<br>
+<h3>Featured Post</h3>
+<li><%= @destination.most_likes.max %></li>
+</ul>
